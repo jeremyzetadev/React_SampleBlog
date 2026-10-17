@@ -74,6 +74,11 @@ function App() {
     <div className="App">
         <Header title="React JS Blog"/>
         <Nav search={search} setSearch={setSearch}/>
+          // Routes/Route-path is for older source codes
+          // ※The latest use for router is   
+          // <React.StrictMode>
+          //    <RouterProvider router={router} />
+          // </React.StrictMode>
           <Routes>
             <Route path="/" element={<Home posts={searchResults}/>}/>
             <Route path="/post" element={<NewPost 
